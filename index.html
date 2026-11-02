@@ -246,15 +246,48 @@
     <fieldset>
       <legend>  Your Details</legend>
       <label for="full name ">Full Name:</label>
-      <input type="text" id="full name" name="full name">
+      <input type="text" id="full name" name="full name" required>
       <br><br>
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email"> >
+      <input type="email" id="email" name="email"required  >
     </fieldset>
+ 
+    <fieldset>
+     <legend>project Details</legend>
+     <label for ="phone">phone(optional):</label> 
+     <input type="text" id="phone" name="phone"
+         pattern="0[79][0-9]{8}" title ="10 digits starting from 09 or 07">
+         <br><br>
+      <p> Preferred contact method:</p>
+      <input type="radio" id="by-email" name ="conatct-method" values="email" checked>
+      <label for ="by email">Email </label>
+       <input type="radio" id="by-phone" name="contact-method" value="phone"> 
+      <label for="by-phone">Phone</label> 
+      <br><br>
 
+       <label for="meeting">Preferred meeting date:</label> 
+    <input type="date" id="meeting" name="meeting" min="2026-11-01"> 
+    <br><br> 
+ 
+    <label for="weeks">Project length (weeks):</label> 
+    <input type="number" id="weeks" name="weeks" min="1" max="52" step="1" > 
+    <br><br> 
+ 
+    <label for="brief">Attach a project brief:</label> 
+    <input type="file" id="brief" name="brief"> 
+    <br><br> 
+ 
+    <label for="colour">Preferred website colour:</label> 
+    <input type="color" id="colour" name="colour" value="#1f5fa8"> 
+    <br><br> 
+ 
+    <label for="rating">How much do you like my portfolio? (1–10)</label> 
+    <input type="range" id="rating" name="rating" min="1" max="10" value="7"> 
+</fieldset> 
+       
     <legend> Your Message </legend> 
     <label for="reason">Reason for contacting me:</label>
-    <select id="reason" name="reason">
+    <select id="reason" name="reason " required>
       <optgroup label="work">
         <option value="Internship">Internship Offer</option>
         <option value="freelance">Freelance project</option>
@@ -269,8 +302,11 @@
     <br><br> 
  
     <label for="message">Message:</label><br> 
-    <textarea id="message" name="message" rows="6" cols="40"></textarea> 
-    </fieldset> 
+    <textarea id="message" name="message" rows="6" cols="40" required></textarea> 
+     <br> 
+<input type="checkbox" id="copy" name="copy" value="yes"> 
+<label for="copy">Send me a copy of this message</label> 
+  </fieldset> 
     </select>
     
     <button type="submit ">Send message</button>
