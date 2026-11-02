@@ -11,6 +11,7 @@
   </head>
   <body>
     <header>
+      <canvas id="logo" width="120" height="120">Betelhem Solomon logo</canvas>
     <h1>Betelhem Solomon</h1>
     <img src="images/profile.png" alt="Image of Betelhem solomon " title="Betelhem solomon" width="200" height="200">
     <p>Software Engineering Student at <abbr title="Addis Ababa Science and Technology University ,2026(Gc)">AASTU</abbr> </p>
@@ -121,6 +122,44 @@ optimum="1">20%</meter>
   <meter id="1v1-Es" value="0.6" min="0" max="1"  low="0.2" high="0.8" optimum ="1" >60% </meter>
 </p>
 </p> 
+  
+
+<canvas id="skillChart" width="300" height="150"></canvas>
+
+<script>
+    const canvas = document.getElementById('skillChart');
+    const ctx = canvas.getContext('2d');
+
+    
+
+    // HTML - 60%
+    ctx.fillStyle = "#1f5fa8";
+    ctx.fillRect(15, 34, 45, 96);
+
+    // python - 70%
+    ctx.fillStyle = "#4779b8";
+   ctx.fillRect(85, 46, 45, 84);
+
+    // JavaScript - 60%
+    ctx.fillStyle = "#d9a441";
+     ctx.fillRect(155, 106, 45, 24);
+
+    // Embedded - 75%
+    ctx.fillStyle = "#294c75";
+     ctx.fillRect(225, 58, 45, 72);
+     
+    // Skill names
+    ctx.fillStyle = "#14213d";
+    ctx.font = "11px Arial";
+    ctx.textAlign = "center";
+
+    ctx.fillText("HTML", 47, 144);
+    ctx.fillText("python", 117, 144);
+    ctx.fillText("JavaScript", 187, 144);
+    ctx.fillText("Embedded", 257, 144);
+</script>
+
+
 
      </section>
 
@@ -371,5 +410,27 @@ width="600" height="300" title="Map of my university campus">
   <p>&Copy; 2026 Betelhem Solomon .All right reserved </p>
   <p> Last update : <time datetime="2026-11-02">02 November 2026</time></p>
 </footer>
+<script>
+    const canvas = document.getElementById('logo');
+    const ctx = canvas.getContext('2d');
+
+    // Background: x, y, width, height
+    ctx.fillStyle = "#14213d";
+    ctx.fillRect(0, 0, 120, 120);
+
+    // Circle: centre x, centre y, radius, start angle, end angle
+    ctx.beginPath();
+    ctx.arc(60, 60, 45, 0, 2 * Math.PI);
+    ctx.fillStyle = "#e9c46a";
+    ctx.fill();
+
+    // Initials
+    ctx.fillStyle = "#14213d";
+    ctx.font = "bold 36px Arial";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText("BS", 60 ,62);
+</script> 
+
 </body>
 </html>
