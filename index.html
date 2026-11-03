@@ -12,18 +12,11 @@
   <body>
     <header>
       <canvas id="logo" width="120" height="120">Betelhem Solomon logo</canvas>
+      
     <h1>Betelhem Solomon</h1>
     <img src="images/profile.png" alt="Image of Betelhem solomon " title="Betelhem solomon" width="200" height="200">
     <p>Software Engineering Student at <abbr title="Addis Ababa Science and Technology University ,2026(Gc)">AASTU</abbr> </p>
-    <nav>
-    <p><a href="#about">About</a> |
-       <a href="#skills">Skills</a> | 
-       <a href="#projects">Projects</a> | 
-       <a href="#education">Education</a> | 
-       <a href="#contact">Contact</a> | 
-       <a href="project.html">All Projects</a> 
-    </p>
-    </nav>
+    
     <button type="button" 
 onclick="document.getElementById('hireDialog').showModal()">Hire me</button> 
 <dialog id="hireDialog"> 
@@ -34,6 +27,17 @@ download>download my <abbr title="Curriculum Vitae">CV</abbr></a>.</p>
 <button type="button" 
 onclick="document.getElementById('hireDialog').close()">Close</button> 
 </dialog>
+    
+    <nav>
+    <p><a href="#about">About</a> |
+       <a href="#skills">Skills</a> | 
+       <a href="#projects">Projects</a> | 
+       <a href="#education">Education</a> | 
+       <a href="#contact">Contact</a> | 
+       <a href="project.html">All Projects</a> 
+    </p>
+    </nav>
+    
     </header>
 
     <main>
@@ -126,40 +130,6 @@ optimum="1">20%</meter>
 
 <canvas id="skillChart" width="300" height="150"></canvas>
 
-<script>
-    const canvas = document.getElementById('skillChart');
-    const ctx = canvas.getContext('2d');
-
-    
-
-    // HTML - 60%
-    ctx.fillStyle = "#1f5fa8";
-    ctx.fillRect(15, 34, 45, 96);
-
-    // python - 70%
-    ctx.fillStyle = "#4779b8";
-   ctx.fillRect(85, 46, 45, 84);
-
-    // JavaScript - 60%
-    ctx.fillStyle = "#d9a441";
-     ctx.fillRect(155, 106, 45, 24);
-
-    // Embedded - 75%
-    ctx.fillStyle = "#294c75";
-     ctx.fillRect(225, 58, 45, 72);
-     
-    // Skill names
-    ctx.fillStyle = "#14213d";
-    ctx.font = "11px Arial";
-    ctx.textAlign = "center";
-
-    ctx.fillText("HTML", 47, 144);
-    ctx.fillText("python", 117, 144);
-    ctx.fillText("JavaScript", 187, 144);
-    ctx.fillText("Embedded", 257, 144);
-</script>
-
-
 
      </section>
 
@@ -167,14 +137,14 @@ optimum="1">20%</meter>
      <p> Skill that i plan to learn:</p>
      <ol type="1">
       <li>Web Development</li>
-         <ol type="a">
+         <ol type="i">
            <li>Html structure and content</li>
            <li>CSS layout and design</li>
            <li>Javascript</li>
          </ol>
-      <li>AI</li>
-      <li>React</li>
-      <li>Node.js</li>
+      <li>PHP</li>
+      <li>Database</li>
+      <li>Deploy my portfolio online</li>
      </ol>
 
      <h3>Tools I plan to use to learn these skills</h3>
@@ -228,13 +198,14 @@ optimum="1">20%</meter>
       cin>>variable;
       cout&lt&lt"The value of the variable is: "&lt&ltvariable&lt&ltendl;
             </code></pre>
-        <p>To see all the project and their detail: <a href="project.html" >See all my project </a></p>
+        <p>To see all the project and their detail: <a href="project.html" >See all my project →</a></p>
   </section>
 
-    <section id="education">Education</h2>
+    <section id="education">
+      <h2>Education</h2>
     <h3>Undergraduate or BSc in software Engineering</h3>
      
-    <p> Addis Ababa Science and Technology University-<time datetime="2026-11">November 2026</time>- present</p>
+    <p> Addis Ababa Science and Technology University(AASTU), <time datetime="2026-11"> November 2026</time>- present</p>
 
     <p> 
 <label for="degree">Degree progress:</label> 
@@ -350,7 +321,7 @@ width="600" height="300" title="Map of my university campus">
          pattern="0[79][0-9]{8}" title ="10 digits starting from 09 or 07">
          <br><br>
       <p> Preferred contact method:</p>
-      <input type="radio" id="by-email" name ="conatct-method" values="email" checked>
+      <input type="radio" id="by-email" name ="conatct-method" value="email" checked>
       <label for ="by email">Email </label>
        <input type="radio" id="by-phone" name="contact-method" value="phone"> 
       <label for="by-phone">Phone</label> 
@@ -375,7 +346,7 @@ width="600" height="300" title="Map of my university campus">
     <label for="rating">How much do you like my portfolio? (1–10)</label> 
     <input type="range" id="rating" name="rating" min="1" max="10" value="7"> 
 </fieldset> 
-       
+  <fieldset>   
     <legend> Your Message </legend> 
     <label for="reason">Reason for contacting me:</label>
     <select id="reason" name="reason " required>
@@ -399,17 +370,18 @@ width="600" height="300" title="Map of my university campus">
 <label for="copy">Send me a copy of this message</label> 
   </fieldset> 
     </select>
-    
-    <button type="submit ">Send message</button>
+    <br>
+    <button type="submit">Send message</button>
     <button type="reset">clear </button>
 
   </form>
 </main>
 
 <footer>
-  <p>&Copy; 2026 Betelhem Solomon .All right reserved </p>
-  <p> Last update : <time datetime="2026-11-02">02 November 2026</time></p>
+  <p>&copy; 2026 Betelhem Solomon .All right reserved </p>
+  <p> Last update : <time datetime="2026-11-03">03 November 2026</time></p>
 </footer>
+
 <script>
     const canvas = document.getElementById('logo');
     const ctx = canvas.getContext('2d');
@@ -430,7 +402,40 @@ width="600" height="300" title="Map of my university campus">
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText("BS", 60 ,62);
-</script> 
+
+
+
+    const skillcanvas = document.getElementById('skillChart');
+    const skillctx = skillcanvas.getContext('2d');
+
+  
+    
+    skillctx.fillStyle = "#1f5fa8";
+    skillctx.fillRect(15, 34, 45, 96);
+
+   
+    skillctx.fillStyle = "#4779b8";
+   skillctx.fillRect(85, 46, 45, 84);
+
+    
+    skillctx.fillStyle = "#d9a441";
+    skillctx.fillRect(155, 106, 45, 24);
+
+   
+    skillctx.fillStyle = "#294c75";
+     skillctx.fillRect(225, 58, 45, 72);
+     
+   
+    skillctx.fillStyle = "#14213d";
+    skillctx.font = "11px Arial";
+    skillctx.textAlign = "center";
+
+    skillctx.fillText("HTML", 47, 144);
+    skillctx.fillText("python", 117, 144);
+    skillctx.fillText("JavaScript", 187, 144);
+    skillctx.fillText("Embedded", 257, 144);
+
+</script>
 
 </body>
 </html>
